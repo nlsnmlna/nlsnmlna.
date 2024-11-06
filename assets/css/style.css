@@ -1,1 +1,173 @@
-/* CSS Resets */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, Plus Jakarta Sans, sans-serif; */
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ------------------------------------ */
+/* Header */
+nav {
+  background-color: #0d1821;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container-nav-nelsen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 2rem 5rem 2rem 5rem;
+}
+
+.main-menu-nelsen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo-nav-nelsen {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-nav-nelsen a {
+  text-decoration: none;
+}
+
+#judul-nelsen {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0;
+  color: #b4cded;
+}
+
+#subjudul-nelsen {
+  font-size: 1rem;
+  color: #b4cded;
+}
+
+#subjudul-nelsen span {
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #b4cded;
+}
+
+.menu-item-nelsen {
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b4cded;
+}
+
+.active {
+  border: #344966 solid 5px;
+  background-color: #344966;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.active:hover a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b4cded;
+}
+
+.menu-item-nelsen:hover {
+  font-weight: 600;
+  color: #7ba8e2;
+  cursor: pointer;
+}
+
+#menu-icon-nelsen {
+  display: none;
+  color: #b4cded;
+  font-size: 1.5rem;
+}
+/* ------------------------------------ */
+/* Hero */
+/* Hero Section */
+.hero-nelsen {
+  background: url('https://www.pixelstalk.net/wp-content/uploads/2016/09/It-Desktop-Wallpaper-HD-Free-Download.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-nelsen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.container-hero-nelsen {
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-nelsen h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-nelsen p {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 3rem;
+}
+
+.btn-hero-nelsen {
+  background-color: #f9a826;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero-nelsen:hover {
+  background-color: #ffcc00;
+}
+/* ------------------------------------ */
+/* Media Query */
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
