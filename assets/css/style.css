@@ -114,13 +114,17 @@ nav {
 /* Hero */
 /* Hero Section */
 .hero-nelsen {
-  background: url('https://www.pixelstalk.net/wp-content/uploads/2016/09/It-Desktop-Wallpaper-HD-Free-Download.jpg') no-repeat center center/cover;
-  height: 100vh;
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2126186.jpg&f=1&nofb=1&ipt=d5bec9e17229697bec901b5a900f044b1db7d292e819d02b3e7b432f2f31856d&ipo=images') no-repeat center
+    center/cover;
+  height: 90vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-nelsen::before {
@@ -130,15 +134,25 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+  background: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
   z-index: 1;
 }
 
 .container-hero-nelsen {
-  max-width: 1200px;
-  padding: 0 20px;
+  /* max-width: 1200px;
+  padding: 0 20px; */
+  /* padding-top: 10rem; */
+  padding: 5rem 14rem 0rem 14rem;
   position: relative;
   z-index: 2;
+}
+
+.hero-divider-nelsen {
+  width: 150px;
+  height: 3px;
+  background-color: #b4cded;
+  margin: 1rem auto;
+  /* margin-bottom: 2rem; */
 }
 
 .hero-nelsen h1 {
@@ -146,24 +160,46 @@ nav {
   margin-bottom: 1rem;
 }
 
+.hero-nelsen h1 span {
+  color: #7ba8e2;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 .hero-nelsen p {
+  font-style: italic;
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+#hero-text-nelsen {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+#hero-text-nelsen span {
+  font-weight: 600;
+  color: #7ba8e2;
 }
 
 .btn-hero-nelsen {
-  background-color: #f9a826;
+  background-color: #344966;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   text-decoration: none;
   font-size: 1.2rem;
-  border-radius: 5px;
+  border-radius: 25px;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
   transition: background-color 0.3s ease;
 }
 
 .btn-hero-nelsen:hover {
-  background-color: #ffcc00;
+  background-color: #5fa8d3;
+  /* color: #344966; */
 }
 /* ------------------------------------ */
 /* Media Query */
